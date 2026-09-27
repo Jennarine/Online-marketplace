@@ -1,8 +1,8 @@
 # Product Requirements Document (PRD) — Online Marketplace
 
-**Version:** 2.0 (Rewrite)
-**Status:** Draft for review
-**Tech stance:** Tech-agnostic
+**Version:** 2.1 (Stack + Implementation Plan locked)
+**Status:** Approved for implementation
+**Tech stance:** React + Node.js/Express + MongoDB (local dev), JWT auth, local file storage
 
 ## 1. Product Name
 
