@@ -178,3 +178,7 @@ Phase 2:
 ## 16. Decision Note
 
 I chose MongoDB because it is flexible for storing products, vendors, customers, and orders. The application and database will run locally during development before cloud deployment.
+
+## 17. Design Refinement Note
+
+Improved readability with larger fonts, increased button contrast, added rounded corners, and improved spacing for a cleaner user interface.
