@@ -156,3 +156,25 @@ Phase 2:
 * Payment success/refund path verified in sandbox + live smoke test.
 * No critical security issues (auth bypass, IDOR on orders).
 * Admin can verify vendor and remove listing with audit trail.
+
+## 14. Technology Stack (Locked)
+
+* Framework: React
+* Backend: Node.js + Express
+* Database: MongoDB (runs locally for now)
+* Authentication: JWT Authentication
+* File Storage: Local storage/uploads for now
+* Environment: App and database both run locally during development.
+
+## 15. Implementation Plan
+
+* Phase 1: Set up project structure and homepage.
+* Phase 2: Build vendor registration and login.
+* Phase 3: Build customer registration and login.
+* Phase 4: Create vendor dashboard and product management.
+* Phase 5: Create customer shopping, cart, checkout, and order tracking.
+* Phase 6: Testing and future improvements.
+
+## 16. Decision Note
+
+I chose MongoDB because it is flexible for storing products, vendors, customers, and orders. The application and database will run locally during development before cloud deployment.
