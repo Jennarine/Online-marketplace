@@ -4,9 +4,9 @@ Web platform connecting vendors with customers. Vendors create stores, upload pr
 
 ## Status
 
-PRD-only (v2.0 draft). No implementation yet. Tech-agnostic.
+PRD v2.1 (stack locked: React + Node/Express + MongoDB local, JWT). Phase 1 homepage done (`index.html`).
 
-See `ONLINE MARKETPLACE.md` for full requirements: objectives, user stories, functional specs (§7), data entities (§8), NFRs (§9), MVP scope (§11).
+See `PRD.md` for full requirements: objectives, user stories, functional specs (§7), data entities (§8), NFRs (§9), MVP scope (§11), stack (§14), implementation plan (§15).
 
 ## MVP Summary
 
@@ -21,8 +21,10 @@ Out of scope for MVP: native apps, multi-currency/language, auctions, live chat,
 
 ```
 .
-├── ONLINE MARKETPLACE.md  # PRD v2.0
-└── README.md
+├── PRD.md          # PRD v2.1
+├── README.md
+├── index.html      # Phase 1 working homepage
+└── design.html     # earlier design draft
 ```
 
 ## Open Decisions
