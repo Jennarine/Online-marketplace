@@ -1,0 +1,14 @@
+{
+  "name": "online-marketplace-backend",
+  "version": "0.1.0",
+  "description": "Backend for Online Marketplace (Node.js + Express). External services: Paystack, email, SMS/push, shipping.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,3 +1,7 @@
 # Local automation (not pushed)
 auto-sync.ps1
 auto-sync.log
+
+# Backend secrets & deps (not pushed)
+backend/.env
+backend/node_modules/

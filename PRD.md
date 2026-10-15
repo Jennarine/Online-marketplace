@@ -144,8 +144,8 @@ Phase 2:
 
 ## 12. Open Questions
 
-1. Payment provider(s) for launch?
-2. Who handles delivery — vendor self-delivery or platform courier?
+1. Payment provider(s) for launch? → Decided: Paystack (test mode first).
+2. Who handles delivery — vendor self-delivery or platform courier? (Open — manual fallback until courier API chosen.)
 3. Commission/fee model?
 4. Return/refund policy window?
 5. Vendor verification documents required?
@@ -182,3 +182,11 @@ I chose MongoDB because it is flexible for storing products, vendors, customers,
 ## 17. Design Refinement Note
 
 Improved readability with larger fonts, increased button contrast, added rounded corners, and improved spacing for a cleaner user interface.
+
+## 18. External Services
+
+* Payments: Paystack (test keys first). Initialize via `POST /transaction/initialize`, verify via `GET /transaction/verify/:reference`; webhook verification with `PAYSTACK_WEBHOOK_SECRET`.
+* Email: console (dev) → SendGrid. Used for order updates and password reset.
+* SMS/Push: console (dev) → Termii. Used for order alerts. Twilio/FCM deferred.
+* Shipping: manual vendor self-delivery until a courier API is chosen (`SHIPPING_API_URL` + `SHIPPING_API_KEY`).
+* All keys live in `backend/.env` (gitignored). `/api/integrations/status` reports configured/not without exposing secrets.
